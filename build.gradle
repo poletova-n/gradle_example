@@ -1,0 +1,28 @@
+group 'com.nadia'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.slf4j:slf4j-api:1.7.25'
+    }
+}
+
+subprojects {
+    apply {
+        plugin 'java'
+        plugin 'application'
+    }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.slf4j:slf4j-api:1.7.25'
+    }
+}

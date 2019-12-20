@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nadia'
+version '1.0-SNAPSHOT'
+
+
+dependencies {
+    compile project(':func_project')
+    compile group: 'joda-time', name: 'joda-time', version: '2.10.5'
+}
+
+
